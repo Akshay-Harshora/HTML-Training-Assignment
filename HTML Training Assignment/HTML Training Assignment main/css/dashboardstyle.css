@@ -322,6 +322,7 @@ body {
     background-color: #FFFFFF;
     width: 385px;
     height: 400px;
+    margin-left: 30px;
 }
 
 .color1 .color-cont1 {
@@ -441,6 +442,7 @@ body {
         width: 24px!important;
       
     }
+    
     .profile {
         margin-left: 22px;
         margin-top: 18px;
@@ -480,7 +482,7 @@ body {
         display: none;
         /* background: url('../images/mobile-header-logo.svg')!important; */
     }
- 
+   
     .dataimage {
         padding-left: 10px;
         padding-bottom: 10px;
@@ -506,6 +508,7 @@ body {
         background-color: #FFFFFF;
         width: 100%;
         max-height: 400px;
+        margin-left: 30px;
     }
  
  
@@ -640,23 +643,23 @@ body {
     }
 
     .mysidebar1 {
-        width: 0px;
-        display: none;
+        width: 0px!important;
+        display: none!important;
 
     }
 
     .dashboard2 {
-        margin-left: 0px;
+        margin-left: 0px!important;
     }
 
     .dashboard1 {
-        margin-top: 100px;
+        margin-top: 100px!important;
         opacity: 1;
     }
 
     .mysidebar2 {
-        width: 100%;
-        display: block;
+        width: 100%!important;
+        display: block!important;
     }
 
     
@@ -692,6 +695,29 @@ body {
         background-color: #FFFFFF;
     }
    
+}
+
+
+.mysidebar1 {
+    width: 0px;
+    display: none;
+
+}
+
+.mysidebar2 {
+    width: 227px;
+    display: block;
+}
+
+.dashboard1 {
+    margin-left: 0px;
+    width: 100%!important;
+}
+.dashboard1 .dash{
+    margin-left:20px;
+}
+.dashboard2 {
+    margin-left: 274px;
 }
 
 @media screen and (min-width:991px) and (max-width: 1559px) {
@@ -784,6 +810,7 @@ body {
     
 
 }
+
 
 /* @media screen and (min-width:1024px) and (max-width: 1559px) {
     .topnavbar {

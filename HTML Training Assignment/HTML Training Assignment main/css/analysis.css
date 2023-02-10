@@ -1132,6 +1132,28 @@ input {
         margin-top:25px!important;
     }
 }
+.mysidebar1 {
+    width: 0px!important;
+    display: none!important;
+
+}
+.mysidebar2 {
+    width: 227px!important;
+    display: block!important;
+}
+
+.analysis1 {
+    margin-left: 0px!important;
+    width: 100%!important;
+}
+.analysis1 .analysis
+{
+    margin-left:20px!important;
+}
+.analysis2 {
+    margin-left: 274px!important;
+}
+
 @media screen and (min-width:991px) and (max-width:1559px)
 {
     .mysidebar1 {
