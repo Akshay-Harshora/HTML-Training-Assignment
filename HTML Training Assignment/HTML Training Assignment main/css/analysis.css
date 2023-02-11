@@ -771,13 +771,13 @@ input {
       
     }
     .mainanalysis {
-        position: absolute;
-        margin-left: 0px;
+        position: absolute!important;
+        margin-left: 0px!important;
         margin-top: 285px!important;
-        width: 100%;
-        font-family: 'roboto';
+        width: 100%!important;
+        font-family: 'roboto'!important;
         font-weight: 500 !important;
-        opacity:0.4;
+        opacity:0.4!important;
     }
     .sidebar {
         position: fixed;
@@ -1029,13 +1029,13 @@ input {
     }
 
     .mysidebar1 {
-        width: 0px;
-        display: none;
+        width: 0px!important;
+        display: none!important;
 
     }
 
     .analysis2 {
-        margin-left: 0px;
+        margin-left: 0px!important;
     }
 
     .analysis1 {
@@ -1044,8 +1044,8 @@ input {
     }
 
     .mysidebar2 {
-        width: 100%;
-        display: block;
+        width: 100%!important;
+        display: block!important;
     }
 
     
@@ -1129,29 +1129,29 @@ input {
     }
     .dropdownmargin
     {
-        margin-top:25px!important;
+        margin-top:25px;
     }
 }
 .mysidebar1 {
-    width: 0px!important;
-    display: none!important;
+    width: 0px;
+    display: none;
 
 }
 .mysidebar2 {
-    width: 227px!important;
-    display: block!important;
+    width: 227px;
+    display: block;
 }
 
 .analysis1 {
-    margin-left: 0px!important;
-    width: 100%!important;
+    margin-left: 0px;
+    width: 100%;
 }
 .analysis1 .analysis
 {
-    margin-left:20px!important;
+    margin-left:20px;
 }
 .analysis2 {
-    margin-left: 274px!important;
+    margin-left: 274px;
 }
 
 @media screen and (min-width:991px) and (max-width:1559px)
