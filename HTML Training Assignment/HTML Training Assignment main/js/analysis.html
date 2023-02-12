@@ -57,6 +57,95 @@
             
 
         }
+        function tab1click()
+        {
+           
+                let tab1 = document.getElementById("tab1open")
+                let tab2 = document.getElementById("tab2open")
+                let tab3 = document.getElementById("tab3open")
+
+                let tablink1 = document.getElementById("tab1")
+
+                let tablink2 = document.getElementById("tab2")
+                let tablink3 = document.getElementById("tab3")
+                
+                if(tab2.classList.contains('tab2display') || tab3.classList.contains('tab3display'))
+                {
+                    tab2.classList.remove("tab2display");
+                    tab3.classList.remove("tab3display");
+                    
+                }
+                tab1.classList.add("tab1display")
+                
+                tab2.classList.add("tab2remove")
+                tab3.classList.add("tab3remove")
+                tablink1.classList.add("tabred");
+                tablink1.classList.remove("tabwhite");
+
+                tablink2.classList.remove("tabred");
+                tablink3.classList.remove("tabred");
+    
+                              
+                
+        }
+        function tab2click()
+        {
+           
+                let tab1 = document.getElementById("tab1open")
+                let tab2 = document.getElementById("tab2open")
+                let tab3 = document.getElementById("tab3open")
+                let tablink1 = document.getElementById("tab1")
+
+                let tablink2 = document.getElementById("tab2")
+                let tablink3 = document.getElementById("tab3")
+                if(tab1.classList.contains('tab1display') || tab3.classList.contains('tab3display'))
+                {
+                    tab1.classList.remove("tab1display");
+                    tab3.classList.remove("tab3display");
+                    
+                }
+                tablink1.classList.remove("defaultred")
+                tablink1.classList.add("tabwhite");
+                tab2.classList.add("tab2display")
+                tab1.classList.add("tab1remove")
+                tab3.classList.add("tab3remove")
+                tab2.classList.remove("tab2hidden")
+                tablink1.classList.remove("tabred");
+                tablink2.classList.add("tabred");
+                tablink3.classList.remove("tabred");
+  
+                
+        }
+        function tab3click()
+        {
+            
+                let tab1 = document.getElementById("tab1open")
+                let tab2 = document.getElementById("tab2open")
+                let tab3 = document.getElementById("tab3open")
+                let tablink1 = document.getElementById("tab1")
+
+                let tablink2 = document.getElementById("tab2")
+                let tablink3 = document.getElementById("tab3")
+                if(tab1.classList.contains('tab1display') || tab2.classList.contains('tab2display'))
+                {
+                    tab1.classList.remove("tab1display");
+                    tab2.classList.remove("tab2display");
+                    
+                }
+                tablink1.classList.remove("defaultred")
+                tablink1.classList.add("tabwhite");
+                tab3.classList.add("tab3display")
+                tab1.classList.add("tab1remove")
+                tab2.classList.add("tab2remove")
+                tab3.classList.remove("tab3hidden") 
+                tablink1.classList.remove("tabred");
+                tablink2.classList.remove("tabred");
+                tablink3.classList.add("tabred");
+               
+                
+
+        }
+    
     </script>
     <div class="topnavbar">
         <div class="topleftnavbar">
@@ -329,23 +418,32 @@
                 <button
                     style="border-radius:23px;background-color: #FFFF;color:#C8242F;width: 145px;height: 45px;margin-left: 21px;border: 1px solid #C8242F;margin-top: 15px;"
                     class="family">Secondary</button>
-                <p class="radiotext">Tabs</p>
+                    <p class="radiotext">Tabs</p>
                 <div style="display: flex;border-bottom: 1px solid #ADADAD;margin-left: 29px;margin-right: 29px;padding-bottom: 13px;margin-top: 21px;"
                     class="tabwidth">
-                    <div><a href="#" style="color:#C8242F;text-decoration: none;font-size: 15px;">Tab 1</a></div>
-                    <div style="margin-left:36px;"><a href="#"
-                            style="text-decoration: none;color: #ADADAD;font-size: 15px;">Tab 2</a></div>
-                    <div style="margin-left:36px;"><a href="#"
-                            style="text-decoration: none;color: #ADADAD;font-size: 15px;">Tab 3</a></div>
+                    <div><a style="text-decoration: none;font-size: 15px;cursor: pointer;" id = "tab1" onclick="tab1click()" class = "defaultred" >Tab 1</a></div>
+                    <div style="margin-left:36px;"><a
+                            style="text-decoration: none;font-size: 15px;cursor: pointer;color: #ADADAD" id="tab2" onclick="tab2click()">Tab 2</a></div>
+                    <div style="margin-left:36px;"><a style="text-decoration: none;font-size: 15px;cursor: pointer;color: #ADADAD" id = "tab3" onclick = "tab3click()">Tab 3</a></div>
                 </div>
                 <div style="margin-top:27px;margin-left: 29px;padding-bottom: 36px;font-size: 15px;font-weight: 400;"
-                    class="tabwidthcontent">
+                    class="tabwidthcontent" id = "tab1open">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                     with the release of Letraset sheets containing
                 </div>
+                <div style="margin-top:27px;margin-left: 29px;padding-bottom: 36px;font-size: 15px;font-weight: 400;"
+                    class="tabwidthcontent tab2hidden" id = "tab2open">
+                    akshay
+                </div>
+                <div style="margin-top:27px;margin-left: 29px;padding-bottom: 36px;font-size: 15px;font-weight: 400;"
+                    class="tabwidthconten tab3hidden" id = "tab3open">
+                   harshora
+                   <!-- //sdfg -->
+                </div>
+            
             </div>
         </div>
     </a>

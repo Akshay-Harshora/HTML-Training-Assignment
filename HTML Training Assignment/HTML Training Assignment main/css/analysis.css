@@ -1161,7 +1161,22 @@ input {
         display: none;
 
     }
-    
+    .infomsg {
+        width: 300px!important;
+        height: 66px!important;
+    }
+    .errormsg {
+        width: 300px!important;
+        height: 66px!important;
+    }
+    .warnmsg {
+        width: 300px!important;
+        height: 66px!important;
+    }
+    .successmsg {
+        width: 300px!important;
+        height: 66px!important;
+    }
     .formdesign {
         background-color: #FFFFFF;
         width: 100%;
@@ -1287,4 +1302,49 @@ input {
     width: 124px!important;
 }
 
+}
+.tabred
+{
+    color:#C8242F!important;
+}
+.tabwhite
+{
+    color: #ADADAD!important;
+}
+.defaultred
+{
+    color:#C8242F;
+
+}
+.tab1display
+{
+    display: block!important;
+}
+.tab2display
+{
+    display: block!important;
+}
+.tab3display
+{
+    display: block!important;
+}
+.tab1remove
+{
+    display: none;
+}
+.tab2remove
+{
+    display: none;
+}
+.tab3remove
+{
+    display: none;
+}
+.tab3hidden
+{
+    display: none;
+}
+.tab2hidden
+{
+    display: none;
 }
